@@ -1,0 +1,25 @@
+﻿<Window x:Class="Reddit_Request_75_volume_squelcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reddit_Request_75_volume_squelcher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="140" Width="300" Loaded="Window_Loaded">
+    <StackPanel>
+        <DockPanel>
+            <TextBlock Text="Device: " Margin="3" Padding="3"/>
+            <ComboBox Name="cbDevices" Margin="3" Padding="3"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Text="Hotkey " Margin="3" Padding="3"/>
+            <TextBox Name="tbHotkey" Margin="3" Padding="3" IsReadOnly="True" KeyUp="tbHotkey_KeyUp" PreviewKeyDown="tbHotkey_PreviewKeyDown"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Text="Vol Low" Margin="3" Padding="3"/>
+            <Slider Name="slideVolLow" Margin="3" Padding="3" Width="80" Maximum="1" ValueChanged="slideVolLow_ValueChanged"/>
+            <TextBlock Text="Vol High" Margin="3" Padding="3"/>
+            <Slider Name="slideVolHigh" Margin="3" Padding="3" Maximum="1" ValueChanged="slideVolHigh_ValueChanged"/>
+        </DockPanel>
+    </StackPanel>
+</Window>
