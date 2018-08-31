@@ -1,4 +1,4 @@
-# Volumn-Squelcher
+# Volume-Squelcher
 
 For muting audio devices via hotkey
 
